@@ -80,19 +80,19 @@ def random_agent(env, episodes):
 
 
 # Run using deep neural network
-# Q_DNN = Q_Learning_NN(env, episodes=EPISODES)
+Q_DNN = Q_Learning_NN(env, episodes=EPISODES)
 
 # Run a random agent
 rand_agent = random_agent(env, episodes=EPISODES)
 
 
 # Plot DNN rewards/ episodes
-# plt.plot(np.arange(len(Q_DNN)), Q_DNN)
-# plt.xlabel('Episodes')
-# plt.ylabel('Average Reward')
-# plt.title('Average Reward vs Episodes')
-# plt.savefig('dl_agent_rewards.jpg')
-# plt.close()
+plt.plot(np.arange(len(Q_DNN)), Q_DNN)
+plt.xlabel('Episodes')
+plt.ylabel('Average Reward')
+plt.title('Average Reward vs Episodes')
+plt.savefig('dl_agent_rewards.jpg')
+plt.close()
 
 # Plot random agent rewards/ episodes
 plt.plot(np.arange(len(rand_agent)), rand_agent)
