@@ -1,4 +1,4 @@
-# Deep RL/Robotics Write Up
+# Deep RL/Robotics
 
 # Classical Control Problem - Mountain Car
 
